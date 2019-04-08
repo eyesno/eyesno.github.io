@@ -15,26 +15,41 @@
         <!-- <script type="text/javascript" src="synapses.js"></script> -->
     </head>
     <body>
+        <div class=wrap>
 
-        <!-- The video -->
-        <video autoplay muted loop id="thevideo">
-            <source src="./videos/punksciencereel.mp4" type="video/mp4">
-        </video>
-        
-        <!-- Optional: some overlay text to describe the video -->
-        <div class="content">
-            <img src="images/punkscience_small.png"/>
+            <!-- The video -->
+            <div class="video_contain">
+                <video autoplay muted loop>
+                    <source src="./videos/punksciencereel.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <!-- Optional: some overlay text to describe the video -->
+            <div class="content">
+                <img src="images/punkscience_small.png"/>
 
-            <p>Punk Science Studios Inc. is a team of video game and software developers, artists and designers led by industry veteran, Darryl Wright. </p>
-                
+                <p>Punk Science Studios Inc. is a team of video game and software developers, artists and designers led by industry veteran, Darryl Wright. </p>
+                    
                 <p>With decades of combined experience, our team has shipped
                     critically acclaimed titles on all major platforms. </p>
                 <p>As of June, 2017, Punk Science is not taking on any new projects and the team is currently working with <a href="http://gogiigames.com">Gogii Lighthouse Studios Inc.</a> </p>
                 
                 <p>If you're 
                 interested in finding out more, we'd love to  
-                <a href="mailto:info@punkscience.ca"/>hear from you</a>.
+                <a href="mailto:info@punkscience.ca">hear from you</a>.
                 </p>
+            </div>
         </div>
-        </body>
+    </body>
+
+    <script>
+        // Disable scroll bars via keys
+        window.addEventListener("keydown", function(e) {
+            // space, page up, page down and arrow keys:
+            if([32, 33, 34, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+                e.preventDefault();
+            }
+        }, false);
+    </script>
+
 </html>

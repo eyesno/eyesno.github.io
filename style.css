@@ -1,13 +1,10 @@
-/* Style the video: 100% width and height to cover the entire window */
-#thevideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-}
-
 /* Add some content at the bottom of the video/page */
+body, html {height:100%;}
+
+div.wrap {height:100%; overflow:hidden;} /* Remove scrollbars. */
+
+body {overflow: hidden; } /* Remove scrollbars. */
+
 .content {
    
     background: rgba(0, 0, 0, 0.5);
@@ -50,4 +47,25 @@ img {
     margin-right: 10px;
     clear:both;
 }
+
+
+.video_contain {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    min-height: 50%;
+    min-width: 50%;
+}
+
 
