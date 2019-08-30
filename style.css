@@ -1,9 +1,10 @@
 html { 
-  background: url(images/computer_phones.jpg) no-repeat center center fixed; 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: black;
 }
 
 #logo {
@@ -15,12 +16,13 @@ html {
 
 #text {
     position: fixed;
-    bottom: 2%;
+    bottom: 60%;
     right: 75%;
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     color: #24823d;
     width: 25%;
+    transform: rotate(-14deg);
 }
 
 a:link, a:visited, a:hover, a:active {
