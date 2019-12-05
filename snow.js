@@ -46,9 +46,23 @@
     }
 
 
-    function onCanvasClick() {
-        gDots = []
-        createDots( 200, '#ffffff', 2);
+    function onCanvasClick( event ) {
+        // gDots = []
+        // createDots( 200, '#ffffff', 2);
+        clickX = event.clientX;
+        clickY = event.clientY;
+
+        threshhold = 40;
+
+        for( index in gDots ) {
+            let dot = gDots[index]
+
+            if( (dot.x < clickX + threshhold && dot.x > clickX - threshhold ) &&
+                (dot.y < clickY + threshhold && dot.y > clickY - threshhold ) ) {
+                    dot.colour = "#00FF00";
+                }
+        }
+
     }
 
 
@@ -124,6 +138,7 @@
 
         dot.x = Math.random() * window.innerWidth + 1;
         dot.y = origin;
+        dot.colour = "#FFFFFF";
     }
 
     function randomRange( min, max ) {
