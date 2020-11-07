@@ -32,9 +32,9 @@ ul {
 
 .textblock {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 50%;
+    top: 30px%;
+    left: 15%;
+    right: 15%;
     
     background-color: rgb(14, 185, 23);
     opacity: 75%;
