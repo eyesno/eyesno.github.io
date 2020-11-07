@@ -7,23 +7,18 @@ html {
   background-color: black;
 }
 
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+
 #logo {
     position: fixed;
     bottom: 5%;
     right: 0;
 }
 
-
-#text {
-    position: fixed;
-    bottom: 60%;
-    right: 75%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #24823d;
-    width: 25%;
-    transform: rotate(-14deg);
-}
 
 a:link, a:visited, a:hover, a:active {
     color: #0ce746;
@@ -33,3 +28,32 @@ a:link, a:visited, a:hover, a:active {
 ul {
     list-style-type: none;
 }
+
+
+.textblock {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50%;
+    
+    background-color: rgb(14, 185, 23);
+    opacity: 75%;
+    color: rgb(36, 34, 34);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .fineprint {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+
+    color: rgb(255, 255, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+  }
+  
